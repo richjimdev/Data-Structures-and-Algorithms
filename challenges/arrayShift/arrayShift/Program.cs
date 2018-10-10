@@ -6,7 +6,11 @@ namespace arrayShift
     {
         static void Main(string[] args)
         {
+            int[] testArr = { 2, 4, 6, 8 };
+            int[] testArr2 = { 4, 8, 15, 23, 42 };
 
+            Console.WriteLine(string.Join(",", ArrayShift(testArr, 5)));
+            Console.WriteLine(string.Join(",", ArrayShift(testArr2, 16)));
         }
 
         static int[] ArrayShift(int[] arr, int num)
