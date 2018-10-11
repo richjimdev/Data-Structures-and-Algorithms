@@ -9,10 +9,10 @@ namespace BinarySearch
             int[] inputArray = { 4, 8, 15, 16, 23, 42 };
             int value = 15;
                 
-            Console.WriteLine(BinarySearch(inputArray, value));
+            Console.WriteLine(BinarySearchMethod(inputArray, value));
         }
 
-        public static int BinarySearch(int[] arr, int num)
+        public static int BinarySearchMethod(int[] arr, int num)
         {
             int start = 0;
             int end = arr.Length - 1;
