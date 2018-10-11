@@ -23,5 +23,20 @@ namespace BinaryTest
             Assert.Equal(-1, BinarySearchMethod(inputArray, value));
         }
 
+        [Fact]
+        public void MethodWorksWhenItemIsAtFirstIndex()
+        {
+            int[] inputArray = { 4, 8, 15, 16, 23, 42 };
+            int value = 4;
+            Assert.Equal(0, BinarySearchMethod(inputArray, value));
+        }
+        
+        [Fact]
+        public void MethodWorksWhenItemIsAtLastIndex()
+        {
+            int[] inputArray = { 4, 8, 15, 16, 23, 42 };
+            int value = 42;
+            Assert.Equal(5, BinarySearchMethod(inputArray, value));
+        }
     }
 }
