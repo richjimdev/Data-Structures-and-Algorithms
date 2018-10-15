@@ -2,5 +2,6 @@
 
 ## Table of Contents
 
-1. [Challenge: Insert and Shift an Array](/challenges/arrayShift/)
-2. [Challenge: Binary Search an Array](/challenges/BinarySearch/)
+2. [Challenge: Insert and Shift an Array](/challenges/arrayShift/)
+3. [Challenge: Binary Search an Array](/challenges/BinarySearch/)
+4. [Challenge: Fibbonaci Sequence](/challenges/FibbonaciSequence/)
