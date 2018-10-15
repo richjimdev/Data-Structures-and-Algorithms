@@ -2,20 +2,20 @@
 
 namespace FibbonaciSequence
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
 
         }
         
-        public int FindFib(int index)
+        public static int FindFib(int index)
         {
             int num1 = 0;
             int num2 = 1;
             int current = 1;
 
-            for (int i = 0; i < index-1; i++)
+            for (int i = 0; i < index; i++)
             {
                 current = num1 + num2;
                 num1 = num2;
