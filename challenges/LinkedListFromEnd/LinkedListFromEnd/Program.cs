@@ -1,16 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
 using Day06_LinkedList.Classes;
 
 namespace LinkedListFromEnd
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
 
         }
 
-        static object findKthElement(LList list, int k)
+        public static object FindKthElement(LList list, int k)
         {
             int count = 0;
             object result = null;
@@ -27,12 +28,12 @@ namespace LinkedListFromEnd
             count -= k;
             if (count < 0) throw new Exception("Invalid input number.");
 
-            for (int i = 0; i < count; i++)
+            for (int i = 0; i < count - 1; i++)
             {
                 list.Current = list.Current.Next;
             }
 
-            result = list.Current;
+            result = list.Current.Value;
             list.Current = list.Head;
 
             return result;
