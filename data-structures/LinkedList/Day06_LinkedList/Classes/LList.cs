@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Day06_LinkedList.Classes
 {
-	class LList
+	public class LList
 	{
 		/// <summary>
 		///		Always points to the first node in the LL
@@ -57,8 +57,7 @@ namespace Day06_LinkedList.Classes
 			Console.Write($"{Current.Value} --> NULL\n");
 			Current = Head;
 		}
-
-
+        
 		/// <summary>
 		/// Appends a node to the end of the LL
 		/// time: O(n)
@@ -105,6 +104,11 @@ namespace Day06_LinkedList.Classes
 			}
 		}
         
+        /// <summary>
+        /// Adds a node after a given node
+        /// </summary>
+        /// <param name="newNode">Note to insert</param>
+        /// <param name="existingNode">Target node</param>
         public void AddAfter(Node newNode, Node existingNode)
         {
             Current = Head;
@@ -123,6 +127,11 @@ namespace Day06_LinkedList.Classes
             Current = Head;
         }
 
+        /// <summary>
+        /// Finds if a node exists in a linked list
+        /// </summary>
+        /// <param name="value">The value to seek in the list</param>
+        /// <returns>True or False if found</returns>
         public bool Includes(Object value)
         {
             Current = Head;
