@@ -6,6 +6,7 @@ namespace XUnitTestProject1
 {
     public class UnitTest1
     {
+        //Testing is a list can be created using our classes and nodes
         [Fact]
         public void CreateListCreatesNewListWithGivenNode()
         {
@@ -15,6 +16,7 @@ namespace XUnitTestProject1
             Assert.Equal(list1.Head.Value, node1.Value);
         }
 
+        //Testing if a node can be added to a list using .Add
         [Theory]
         [InlineData(5)]
         [InlineData(67)]
@@ -32,6 +34,7 @@ namespace XUnitTestProject1
             Assert.True(list1.Includes(value));
         }
 
+        //Testing if a node can be inserted before a targerted node using .AddBefore
         [Theory]
         [InlineData("hi")]
         [InlineData("test")]
@@ -54,6 +57,7 @@ namespace XUnitTestProject1
             Assert.True(list2.Includes(value));
         }
 
+        //Testing if a node can be inserted after a targerted node using .AddAfter
         [Theory]
         [InlineData("hi")]
         [InlineData(45)]
