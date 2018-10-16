@@ -34,7 +34,9 @@ namespace XUnitTestProject1
 
         [Theory]
         [InlineData("hi")]
-        public void AddBeforeAdds(object value)
+        [InlineData("test")]
+        [InlineData(17)]
+        public void AddBeforeAddsNode(object value)
         {
             //Arrange
             Node node1 = new Node(1);
@@ -47,6 +49,28 @@ namespace XUnitTestProject1
             list2.Add(node3);
 
             list2.AddBefore(node4, node2);
+
+            //Assert
+            Assert.True(list2.Includes(value));
+        }
+
+        [Theory]
+        [InlineData("hi")]
+        [InlineData(45)]
+        [InlineData("me")]
+        public void AddAfterAddsNode(object value)
+        {
+            //Arrange
+            Node node1 = new Node(1);
+            Node node2 = new Node(2);
+            Node node3 = new Node(3);
+            Node node4 = new Node(value);
+            LList list2 = new LList(node1);
+
+            list2.Add(node2);
+            list2.Add(node3);
+
+            list2.AddAfter(node4, node2);
 
             //Assert
             Assert.True(list2.Includes(value));
