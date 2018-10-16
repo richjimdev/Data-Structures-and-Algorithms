@@ -104,6 +104,24 @@ namespace Day06_LinkedList.Classes
 				Current = Current.Next;
 			}
 		}
+        
+        public void AddAfter(Node newNode, Node existingNode)
+        {
+            Current = Head;
+
+            while (Current.Next != null)
+            {
+                if (Current.Value == existingNode.Value)
+                {
+                    newNode.Next = Current.Next;
+                    Current.Next = newNode;
+                    return;
+                }
+                Current = Current.Next;
+            }
+
+            Current = Head;
+        }
 
         public bool Includes(Object value)
         {
