@@ -32,7 +32,25 @@ namespace XUnitTestProject1
             Assert.True(list1.Includes(value));
         }
 
+        [Theory]
+        [InlineData("hi")]
+        public void AddBeforeAdds(object value)
+        {
+            //Arrange
+            Node node1 = new Node(1);
+            Node node2 = new Node(2);
+            Node node3 = new Node(3);
+            Node node4 = new Node(value);
+            LList list2 = new LList(node1);
 
+            list2.Add(node2);
+            list2.Add(node3);
+
+            list2.AddBefore(node4, node2);
+
+            //Assert
+            Assert.True(list2.Includes(value));
+        }
 
     }
 }
