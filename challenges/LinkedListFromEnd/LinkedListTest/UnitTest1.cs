@@ -8,6 +8,11 @@ namespace LinkedListTest
 {
     public class UnitTest1
     {
+        /// <summary>
+        /// Testing that outputs are correct based on desired index.
+        /// </summary>
+        /// <param name="input">Number</param>
+        /// <param name="expected"></param>
         [Theory]
         [InlineData(0, "g")]
         [InlineData(1, "f")]
