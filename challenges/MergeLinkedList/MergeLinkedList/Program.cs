@@ -32,6 +32,12 @@ namespace MergeLinkedList
             one.Print();
         }
 
+        /// <summary>
+        /// Takes in two linked lists and merges the second list into the first list, in place
+        /// </summary>
+        /// <param name="a">First linked list</param>
+        /// <param name="b">Second Linked List</param>
+        /// <returns></returns>
         public static Node Merge(LList a, LList b)
         {
             a.Current = a.Head;

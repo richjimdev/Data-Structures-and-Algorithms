@@ -7,6 +7,9 @@ namespace XUnitTestProject1
 {
     public class UnitTest1
     {
+        /// <summary>
+        /// Testing that the merged lists keeps the head node of list 1
+        /// </summary>
         [Fact]
         public void ConfirmThatMergedLinkedListHeadNodeIsSameAsFirstInputLinkedList()
         {
@@ -17,6 +20,9 @@ namespace XUnitTestProject1
             Assert.Equal(a.Head.Value, Merge(a, b).Value);
         }
 
+        /// <summary>
+        /// Testing that lists are being zipped correctly
+        /// </summary>
         [Fact]
         public void ConfirmThatMergedLinkedListSecondNodeIsHeadNodeOfSecondLinkedList()
         {
@@ -27,6 +33,9 @@ namespace XUnitTestProject1
             Assert.Equal(b.Head.Value, Merge(a, b).Next.Value);
         }
 
+        /// <summary>
+        /// Testing that 1st list can be longer than second list
+        /// </summary>
         [Fact]
         public void ConfirmThatListACanBeLongerThanListB()
         {
@@ -49,6 +58,9 @@ namespace XUnitTestProject1
             Assert.Equal(6, a.Current.Value);
         }
 
+        /// <summary>
+        /// Testing that second list can be longer than first
+        /// </summary>
         [Fact]
         public void ConfirmThatListBCanBeLongerThanListA()
         {
