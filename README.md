@@ -9,4 +9,4 @@
 6. [Data Structure: Linked List](/data-structures/LinkedList/)
 7. [Challenge: Merge two linked lists together](/challenges/MergeLinkedList/)
 8. [Challenge: Reverse a Linked List](/challenges/ReverseLList/)
-9. [Data Structures: Stack & Queue](/data-structure/StackAndQueue/)
+9. [Data Structures: Stack & Queue](/data-structures/StackAndQueue/)
