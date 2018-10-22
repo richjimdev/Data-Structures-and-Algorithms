@@ -3,9 +3,9 @@ using System;
 
 namespace ReverseLList
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             LList myList = new LList(new Node(1));
 
@@ -23,6 +23,11 @@ namespace ReverseLList
             myList.Print();
         }
 
+        /// <summary>
+        /// Takes in a linked list, and reverses it in place.
+        /// </summary>
+        /// <param name="LL">A Linked List</param>
+        /// <returns>The same Linked List, now reversed</returns>
         public static LList RichardReverse(LList LL)
         {
             LL.Current = LL.Head.Next;
