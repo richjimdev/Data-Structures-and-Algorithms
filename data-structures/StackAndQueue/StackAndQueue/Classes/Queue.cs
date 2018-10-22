@@ -7,7 +7,7 @@ namespace StackAndQueue.Classes
     /// <summary>
     /// A class for Queue data structure
     /// </summary>
-    class Queue
+    public class Queue
     {
         public Node Front { get; set; }
         public Node Rear { get; set; }
