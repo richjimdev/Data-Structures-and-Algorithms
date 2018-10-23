@@ -13,11 +13,9 @@ namespace QueueWithStacks
             Node node3 = new Node(3);
             Node node4 = new Node(4);
 
-            Stack stackOne = new Stack(null);
-                
-            Stack stackTwo = new Stack(null);
+            Stack myStack = new Stack(null);
             
-            QueueStack myQueue = new QueueStack(stackOne, stackTwo);
+            QueueStack myQueue = new QueueStack(myStack);
 
             Console.WriteLine($"Enqueue: {node1.Value}");
             myQueue.Enqueue(node1);
