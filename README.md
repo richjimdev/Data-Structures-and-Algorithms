@@ -10,3 +10,4 @@
 7. [Challenge: Merge two linked lists together](/challenges/MergeLinkedList/)
 8. [Challenge: Reverse a Linked List](/challenges/ReverseLList/)
 9. [Data Structures: Stack & Queue](/data-structures/StackAndQueue/)
+10. [Challenge: Create a Queue using Stacks](/challenges/QueueWithStacks/)
