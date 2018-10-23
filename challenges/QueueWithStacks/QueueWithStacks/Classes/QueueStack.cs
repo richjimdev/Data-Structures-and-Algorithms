@@ -28,6 +28,8 @@ namespace QueueWithStacks.Classes
         /// <returns>Returns the removed Node</returns>
         public Node Dequeue()
         {
+            if (A.Top == null) return null;
+
             while (A.Top.Next != null)
             {
                 B.Push(A.Pop());
