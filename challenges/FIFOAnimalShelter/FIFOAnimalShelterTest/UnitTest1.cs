@@ -30,6 +30,9 @@ namespace FIFOAnimalShelterTest
             Assert.Equal("cat1", shelter.Front.Value);
         }
 
+        /// <summary>
+        /// Testing that enqueue method always adds to Rear of queue
+        /// </summary>
         [Fact]
         public void EnqueueAddsToTheEndOfQueue()
         {
@@ -41,6 +44,9 @@ namespace FIFOAnimalShelterTest
             Assert.Equal("dog1", shelter.Rear.Value);
         }
 
+        /// <summary>
+        /// Checking that dequeue method returns the animal at Front of queue
+        /// </summary>
         [Fact]
         public void DequeueReturnsAnimalAtFrontOfQueue()
         {
@@ -52,6 +58,9 @@ namespace FIFOAnimalShelterTest
             Assert.Equal("cat1", shelter.Dequeue().Value);
         }
 
+        /// <summary>
+        /// Testing that dequeue with dog input returns the first dog in queue
+        /// </summary>
         [Fact]
         public void DequeueWithDogInputReturnsFirstDogInQueue()
         {
@@ -65,6 +74,9 @@ namespace FIFOAnimalShelterTest
             Assert.Equal("dog1", shelter.Dequeue("dog").Value);
         }
 
+        /// <summary>
+        /// Testing that dequeue with cat input returns the first cat in queue
+        /// </summary>
         [Fact]
         public void DequeueWithCatInputReturnsFirstCatInQueue()
         {
@@ -78,6 +90,9 @@ namespace FIFOAnimalShelterTest
             Assert.Equal("cat1", shelter.Dequeue("cat").Value);
         }
 
+        /// <summary>
+        /// Testing that dequeue with any other input returns just the first animal in queue
+        /// </summary>
         [Fact]
         public void DequeueWithOtherInputReturnsFirstAnimalInQueue()
         {
@@ -91,6 +106,9 @@ namespace FIFOAnimalShelterTest
             Assert.Equal("dog1", shelter.Dequeue("horse").Value);
         }
 
+        /// <summary>
+        /// Testing that the dequeue method doesn't mess up the order of the original queue
+        /// </summary>
         [Fact]
         public void DequeueWithInputKeepsOriginalOrderOfAnimals()
         {
