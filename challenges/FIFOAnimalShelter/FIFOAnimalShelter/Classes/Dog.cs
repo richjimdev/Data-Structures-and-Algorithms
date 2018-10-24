@@ -6,7 +6,7 @@ namespace FIFOAnimalShelter.Classes
 {
     public class Dog : Animal
     {
-        Dog(object value)
+        public Dog(object value)
         {
             Value = value;
         }

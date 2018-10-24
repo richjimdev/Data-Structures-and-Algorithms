@@ -31,7 +31,7 @@ namespace FIFOAnimalShelter.Classes
 
         public Animal Dequeue(string input)
         {
-            if (input != "dog" || input != "cat")
+            if (input != "dog" && input != "cat")
                 return Dequeue();
             Animal temp = Front;
             if (input == "dog")
