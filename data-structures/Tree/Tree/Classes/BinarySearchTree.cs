@@ -41,5 +41,35 @@ namespace Tree.Classes
                 }
             }
         }
+
+        public Node Search(Node node, Node root)
+        {
+            if (node.Value == root.Value)
+                return root;
+
+            else if (node.Value < root.Value)
+            {
+                if (root.Left == null)
+                {
+                    return null;
+                }
+                else
+                {
+                    return Search(node, root.Left);
+                }
+            }
+            else if (node.Value > root.Value)
+            {
+                if (root.Right == null)
+                {
+                    return null;
+                }
+                else
+                {
+                    return Search(node, root.Right);
+                }
+            }
+            return null;
+        }
     }
 }
