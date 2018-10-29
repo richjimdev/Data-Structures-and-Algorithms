@@ -16,7 +16,7 @@ namespace Tree.Classes
         public void Add(Node node, Node root)
         {
             if (node.Value == root.Value)
-                throw new Exception("Value already in tree");
+                throw new Exception("Value already exists in tree.");
 
             if (node.Value < root.Value)
             {
@@ -42,12 +42,12 @@ namespace Tree.Classes
             }
         }
 
-        public Node Search(Node node, Node root)
+        public Node Search(int val, Node root)
         {
-            if (node.Value == root.Value)
+            if (val == root.Value)
                 return root;
 
-            else if (node.Value < root.Value)
+            else if (val < root.Value)
             {
                 if (root.Left == null)
                 {
@@ -55,10 +55,10 @@ namespace Tree.Classes
                 }
                 else
                 {
-                    return Search(node, root.Left);
+                    return Search(val, root.Left);
                 }
             }
-            else if (node.Value > root.Value)
+            else if (val > root.Value)
             {
                 if (root.Right == null)
                 {
@@ -66,7 +66,7 @@ namespace Tree.Classes
                 }
                 else
                 {
-                    return Search(node, root.Right);
+                    return Search(val, root.Right);
                 }
             }
             return null;

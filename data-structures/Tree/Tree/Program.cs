@@ -31,7 +31,7 @@ namespace Tree
             BinarySearchTree searchTree = new BinarySearchTree(new Node(100));
 
             searchTree.Add(new Node(50), searchTree.Root);
-            Node searchResult = searchTree.Search(new Node(50), searchTree.Root);
+            Node searchResult = searchTree.Search(50, searchTree.Root);
             Console.WriteLine(searchResult.Value);
         }
 
