@@ -11,4 +11,5 @@
 8. [Challenge: Reverse a Linked List](/challenges/ReverseLList/)
 9. [Data Structures: Stack & Queue](/data-structures/StackAndQueue/)
 10. [Challenge: Create a Queue using Stacks](/challenges/QueueWithStacks/)
-11. [Challenge: FIFO Animal Shelter](/challenges/FIFOAnimalShelter/
+11. [Challenge: FIFO Animal Shelter](/challenges/FIFOAnimalShelter/)
+12. [Challenge: Eeney Meeney Miney Mo](/challenges/EeneyMeeney/)
