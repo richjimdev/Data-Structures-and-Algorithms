@@ -28,6 +28,11 @@ namespace Tree
             tree.result.Clear();
         }
 
+        /// <summary>
+        /// Helper method to print node values
+        /// </summary>
+        /// <param name="ordered">result of a traversal</param>
+        /// <returns>string of values</returns>
         public static string Print(List<Node> ordered)
         {
             string result = "";
