@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace EeneyMeeney
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             List<string> names = new List<string> { "Richard", "Danul", "Allisa", "Kendra", "Suzzie" };
 
@@ -27,9 +27,10 @@ namespace EeneyMeeney
                 Console.WriteLine($"Eeney Meeney Miney Mo.... {nameQueue.Dequeue()} is out!");
                 count--;
             }
+            string result = nameQueue.Dequeue();
+            Console.WriteLine($"{result} wins!");
 
-            Console.WriteLine($"{nameQueue.Dequeue()} wins!");
-            return "lol";
+            return result;
         }
     }
 }

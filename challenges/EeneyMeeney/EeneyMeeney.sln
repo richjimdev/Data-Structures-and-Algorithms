@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EeneyMeeney", "EeneyMeeney\EeneyMeeney.csproj", "{8290748F-5FEF-4C4F-8B02-4873B2EF874A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnneyMeeneyTest", "EnneyMeeneyTest\EnneyMeeneyTest.csproj", "{DF352219-3235-4763-827A-F53820D2F00B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8290748F-5FEF-4C4F-8B02-4873B2EF874A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8290748F-5FEF-4C4F-8B02-4873B2EF874A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8290748F-5FEF-4C4F-8B02-4873B2EF874A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF352219-3235-4763-827A-F53820D2F00B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF352219-3235-4763-827A-F53820D2F00B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF352219-3235-4763-827A-F53820D2F00B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF352219-3235-4763-827A-F53820D2F00B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
