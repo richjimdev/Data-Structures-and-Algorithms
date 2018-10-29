@@ -13,6 +13,11 @@ namespace Tree.Classes
             Root = root;
         }
 
+        /// <summary>
+        /// Adds a node to the tree depending on it's value
+        /// </summary>
+        /// <param name="node">Node to add to tree</param>
+        /// <param name="root">Root of tree (or subtree) of where to add node</param>
         public void Add(Node node, Node root)
         {
             if (node.Value == root.Value)
@@ -42,6 +47,12 @@ namespace Tree.Classes
             }
         }
 
+        /// <summary>
+        /// Search through the tree to find a specific value
+        /// </summary>
+        /// <param name="val">Value to search for</param>
+        /// <param name="root">The starting point to search from</param>
+        /// <returns>The node of the found value, or null</returns>
         public Node Search(int val, Node root)
         {
             if (val == root.Value)

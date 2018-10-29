@@ -7,6 +7,7 @@ namespace TreeTest
 {
     public class UnitTest1
     {
+        // Checking that preorder does Root first order
         [Theory]
         [InlineData(1, 2, 3)]
         [InlineData(3, 4, 5)]
@@ -24,6 +25,7 @@ namespace TreeTest
             Assert.Equal(a, result[0].Value);
         }
 
+        // Checking that inorder does Root middle order
         [Theory]
         [InlineData(1, 2, 3)]
         [InlineData(3, 4, 5)]
@@ -41,6 +43,7 @@ namespace TreeTest
             Assert.Equal(a, result[1].Value);
         }
 
+        // Checking that postOrder does Root last order
         [Theory]
         [InlineData(1, 2, 3)]
         [InlineData(3, 4, 5)]
@@ -58,6 +61,7 @@ namespace TreeTest
             Assert.Equal(a, result[2].Value);
         }
 
+        //Checking that a smaller than root value gets added to the left of root
         [Fact]
         public void BinarySearchTreeAddAddsSmallerNodeToLeft()
         {
@@ -70,6 +74,7 @@ namespace TreeTest
             Assert.Equal(50, searchTree.Root.Left.Value);
         }
 
+        //Checking that a larger than root value gets added to the right of root
         [Fact]
         public void BinarySearchTreeAddAddsBiggerNodeToRight()
         {
@@ -82,6 +87,7 @@ namespace TreeTest
             Assert.Equal(150, searchTree.Root.Right.Value);
         }
 
+        //Checking that adding existing value to tree throws exception
         [Fact]
         public void BinarySearchTreeAddingExistingValueThrowsException()
         {
@@ -102,6 +108,7 @@ namespace TreeTest
 
         }
 
+        //Checking that binary search finds existing values
         [Theory]
         [InlineData(50)]
         [InlineData(150)]
@@ -117,6 +124,7 @@ namespace TreeTest
             Assert.Equal(val, searchTree.Search(val, searchTree.Root).Value);
         }
 
+        //Checking that binary search returns null for non existing value
         [Fact]
         public void BinarySearchSearchReturnsNullIfValueNotFound()
         {
