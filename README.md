@@ -13,3 +13,4 @@
 10. [Challenge: Create a Queue using Stacks](/challenges/QueueWithStacks/)
 11. [Challenge: FIFO Animal Shelter](/challenges/FIFOAnimalShelter/)
 12. [Challenge: Eeney Meeney Miney Mo](/challenges/EeneyMeeney/)
+13. [Data Structure: Trees](/data-structures/Tree/)
