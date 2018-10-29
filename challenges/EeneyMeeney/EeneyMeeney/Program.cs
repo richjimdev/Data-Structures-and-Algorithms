@@ -12,6 +12,12 @@ namespace EeneyMeeney
             MineyMo(names, 3);
         }
 
+        /// <summary>
+        /// A method that takes in a list of strings, counts through the list using an input number and removes the string at that index, then rinse and repeat until only one remains.
+        /// </summary>
+        /// <param name="names">List of strings</param>
+        /// <param name="num">Number to count by</param>
+        /// <returns>Returns the last left string</returns>
         public static string MineyMo(List<string> names, int num)
         {
             int count = names.Count;
