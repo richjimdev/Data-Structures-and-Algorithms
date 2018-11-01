@@ -3,7 +3,7 @@ using Tree.Classes;
 
 namespace MaxTree
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
