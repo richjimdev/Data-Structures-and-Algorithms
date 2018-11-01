@@ -14,4 +14,5 @@
 11. [Challenge: FIFO Animal Shelter](/challenges/FIFOAnimalShelter/)
 12. [Challenge: Eeney Meeney Miney Mo](/challenges/EeneyMeeney/)
 13. [Data Structure: Trees](/data-structures/Tree/)
-12. [Challenge: Fizz Buzz Tree](/challenges/FizzBuzzTree/)
+14. [Challenge: Fizz Buzz Tree](/challenges/FizzBuzzTree/)
+15. [Challenge: Breadth First Search](/challenges/BreadthFirstSearch/)
