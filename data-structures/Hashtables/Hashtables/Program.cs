@@ -11,7 +11,8 @@ namespace Hashtables
 
             Hashtable hs = new Hashtable();
 
-            Console.WriteLine(hs.GetHashKey("hello"));
+            Console.WriteLine(hs.GetHashKey("Dog"));
+            Console.WriteLine(hs.GetHashKey("Dogg"));
         }
     }
 }
