@@ -8,6 +8,7 @@ namespace Hashtables.Classes
     {
         public string Key { get; set; }
         public string Value { get; set; }
+        public HashNode Next { get; set; }
 
         /// <summary>
         /// Building a node requires a value and key
