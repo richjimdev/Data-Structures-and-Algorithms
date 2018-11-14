@@ -29,7 +29,7 @@ namespace HashtablesTest
         /// <summary>
         /// Testing that a value can be found
         /// </summary>
-        /// <param name="test">Value to add</param>
+        /// <param name="value">Value to add</param>
         [Theory]
         [InlineData("Test")]
         [InlineData("Cat")]
@@ -44,6 +44,28 @@ namespace HashtablesTest
 
             //Assert
             Assert.Equal(value, hs.Find("Key"));
+        }
+
+        /// <summary>
+        /// Testing that a colliding key can be added
+        /// </summary>
+        /// <param name="val1">First value to add</param>
+        /// /// <param name="val1">Colliding value to add</param>
+        [Theory]
+        [InlineData("Top", "Pot")]
+        [InlineData("Dog", "God")]
+        [InlineData("Cool", "Loco")]
+        public void CanAddCollisonsOnHashtable(string val1, string val2)
+        {
+            //Arrange
+            Hashtable hs = new Hashtable();
+
+            //Act
+            hs.Add(val1, "Value");
+            hs.Add(val2, "Value 2");
+
+            //Assert
+            Assert.Equal("Value 2" , hs.Find(val2));
         }
     }
 }
