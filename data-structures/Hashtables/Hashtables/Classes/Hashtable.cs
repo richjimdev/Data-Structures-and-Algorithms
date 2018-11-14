@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Hashtables.Classes
 {
-    class Hashtable
+    public class Hashtable
     {
         private HashNode[] storage = new HashNode[1024];
 
