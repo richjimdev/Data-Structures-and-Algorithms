@@ -32,6 +32,21 @@ namespace TreeIntersectionTest
             Assert.Contains(value.ToString(), result);
         }
 
+        /// <summary>
+        /// Testing that trees that dont collide return an empty list
+        /// </summary>
+        [Fact]
+        public void NonDuplicatesReturnNoValues()
+        {
+            //Arrange
+            BinaryTree a = new BinaryTree(new Node(100));
+            BinaryTree b = new BinaryTree(new Node(50));
 
+            //Act
+            List<string> result = Program.Intersect(a, b);
+
+            //Assert
+            Assert.Empty(result);
+        }
     }
 }
