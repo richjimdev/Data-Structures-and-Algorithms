@@ -7,7 +7,7 @@ namespace TreeIntersection
 {
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             BinaryTree a = new BinaryTree(new Node(150));
             BinaryTree b = new BinaryTree(new Node(42));
