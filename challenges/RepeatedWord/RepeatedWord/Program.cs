@@ -7,7 +7,9 @@ namespace RepeatedWord
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string test1 = "The quick brown fox jumped over the lazy brown dog.";
+
+            Console.WriteLine(Repeated(test1));
         }
 
         public static string Repeated(string input)
