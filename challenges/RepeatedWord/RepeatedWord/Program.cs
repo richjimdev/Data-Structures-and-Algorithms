@@ -12,6 +12,11 @@ namespace RepeatedWord
             Console.WriteLine(Repeated(test1));
         }
 
+        /// <summary>
+        /// Take in a string, and return the first repeated word in the string
+        /// </summary>
+        /// <param name="input">String to test</param>
+        /// <returns>Repeated word</returns>
         public static string Repeated(string input)
         {
             string[] inputArr = input.ToLower().Split(" ");
