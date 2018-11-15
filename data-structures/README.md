@@ -6,4 +6,4 @@ Contained here is an accumulation of different Data Structure and Algorithm impl
 1. [Linked List](LinkedList/)
 2. [Stack & Queue](StackAndQueue/)
 3. [Trees](Tree/)
-3. [Hashtables](Hashtables/)
+4. [Hashtables](Hashtables/)

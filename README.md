@@ -17,3 +17,5 @@
 14. [Challenge: Fizz Buzz Tree](/challenges/FizzBuzzTree/)
 15. [Challenge: Breadth First Search](/challenges/BreadthFirstSearch/)
 16. [Challenge: Find Max in Binary Tree](/challenges/MaxTree/)
+17. [Data Structure: Hashtables](/data-structures/Hashtables/)
+18. [Challenge: Intersection of binary trees](/challenges/TreeIntersection/)
