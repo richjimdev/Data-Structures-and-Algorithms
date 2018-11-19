@@ -7,8 +7,11 @@ namespace OnlyUnique
     {
         public static void Main(string[] args)
         {
+            string test = "abcd efghi jklmnop 12345";
+            string test2 = "abc bad";
 
-
+            Console.WriteLine(Unique(test));
+            Console.WriteLine(Unique(test2));
         }
 
         /// <summary>
@@ -20,9 +23,10 @@ namespace OnlyUnique
         {
             Hashtable ht = new Hashtable();
 
-            string merged = input.Split(" ").ToString();
+            string[] allWords = input.Split(" ");
+            string merged = string.Join("", allWords);
 
-            for (int i = 0; i < input.Length; i++)
+            for (int i = 0; i < merged.Length; i++)
             {
                 string letter = merged[i].ToString().ToLower();
 
