@@ -18,3 +18,4 @@
 15. [Challenge: Breadth First Search](/challenges/BreadthFirstSearch/)
 16. [Challenge: Find Max in Binary Tree](/challenges/MaxTree/)
 17. [Challenge: Find repeated word](/challenges/RepeatedWord/)
+18. [Challenge: Unique Strings](/challenges/OnlyUnique/)
