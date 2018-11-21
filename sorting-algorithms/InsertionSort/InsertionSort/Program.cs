@@ -2,9 +2,9 @@
 
 namespace InsertionSort
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int[] array = new int[] { 5, 15, 1, 35, 68, 12, 3, 2 };
 
@@ -12,6 +12,10 @@ namespace InsertionSort
 
         }
 
+        /// <summary>
+        /// Sort an array in place, using an insertion sorting algorithm
+        /// </summary>
+        /// <param name="arr">Array to sort</param>
         public static void Insertion(int[] arr)
         {
             for (int i = 1; i < arr.Length; i++)
