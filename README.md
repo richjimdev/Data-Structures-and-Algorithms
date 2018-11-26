@@ -20,3 +20,4 @@
 17. [Challenge: Find repeated word](/challenges/RepeatedWord/)
 18. [Challenge: Unique Strings](/challenges/OnlyUnique/)
 19. [Sorting Algorithm: Insertion Sort](/sortin-algorithms/InsertionSort/)
+20. [Sorting Algorithm: Quick Sort](/sortin-algorithms/QuickSort/)
