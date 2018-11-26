@@ -11,7 +11,12 @@ namespace QuickSort
             Sort(input, 0, input.Length - 1);
         }
 
-
+        /// <summary>
+        /// Sorts an array using a quick sort algorithm, recursively
+        /// </summary>
+        /// <param name="arr">Array to arrange</param>
+        /// <param name="left">Start of the array</param>
+        /// <param name="right">End of the array</param>
         static void Sort(int[] arr, int left, int right)
         {
             if (left < right)
@@ -27,6 +32,13 @@ namespace QuickSort
 
         }
 
+        /// <summary>
+        /// Helper function. Partitions the array into halves in order to sort it
+        /// </summary>
+        /// <param name="arr">Array to partition</param>
+        /// <param name="left">Start of partition</param>
+        /// <param name="right">End of partition</param>
+        /// <returns></returns>
         static int Partition(int[] arr, int left, int right)
         {
             // set a pivot
@@ -53,6 +65,12 @@ namespace QuickSort
             return low + 1;
         }
 
+        /// <summary>
+        /// Swaps numbers at certain indexes
+        /// </summary>
+        /// <param name="arr">Array to do the swap on</param>
+        /// <param name="i">Index to switch</param>
+        /// <param name="low">other index to switch</param>
         static void Swap(int[] arr, int i, int low)
         {
             int temp;
