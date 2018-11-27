@@ -19,5 +19,6 @@
 16. [Challenge: Find Max in Binary Tree](/challenges/MaxTree/)
 17. [Challenge: Find repeated word](/challenges/RepeatedWord/)
 18. [Challenge: Unique Strings](/challenges/OnlyUnique/)
-19. [Sorting Algorithm: Insertion Sort](/sortin-algorithms/InsertionSort/)
-20. [Sorting Algorithm: Quick Sort](/sortin-algorithms/QuickSort/)
+19. [Sorting Algorithm: Insertion Sort](/sorting-algorithms/InsertionSort/)
+20. [Sorting Algorithm: Quick Sort](/sorting-algorithms/QuickSort/)
+21. [Sorting Algorithm: Merge Sort](/sorting-algorithms/MergeSort/)
