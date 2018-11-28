@@ -6,75 +6,54 @@ namespace Graphs.Classes
 {
     public class Graph
     {
-        GraphNode[] Nodes;
-        int count;
-
-        public Graph(int size)
-        {
-            Nodes = new GraphNode[size];
-            count = 0;
-        }
+        List<GraphNode> Nodes;
 
         public void Add(string value)
         {
-            Nodes[count++] = new GraphNode(value);
+            Nodes.Add(new GraphNode(value));
         }
 
-        private int FindNode(string value)
+        private bool Exists(string value)
         {
-            for (int i = 0; i < Nodes.Length; i++)
+            foreach (GraphNode node in Nodes)
             {
-                if (Nodes[i].Value == value)
-                    return i;
+                if (node.Value == value)
+                    return true;
             }
 
-            return -1;
+            return false;
         }
 
-        public void AddEdges(string a, string b)
+        public string AddEdge(string a, string b, int weight)
         {
-            int aIndex = FindNode(a);
-            int bIndex = FindNode(b);
-
-            if (aIndex == -1 || bIndex == -1)
-                Nodes[aIndex].Edges.Add(b);
-
-            Nodes[bIndex].Edges.Add(a);
-        }
-
-        public void Swap(string a, string b)
-        {
-            int aIndex = FindNode(a);
-            int bIndex = FindNode(b);
-
-            GraphNode temp = Nodes[aIndex];
-            Nodes[aIndex] = Nodes[bIndex];
-            Nodes[bIndex] = temp;
-        }
-
-        public void Delete(string x)
-        {
-            int position = FindNode(x);
-            GraphNode[] temp = new GraphNode[Nodes.Length - 1];
-
-            for (int i = 0; i < Nodes.Length; i++)
+            if (!Exists(a) || !Exists(b))
             {
-                if (i < position)
-                {
-                    temp[i] = Nodes[i];
-                }
+                return "Input nodes do not exist";
+            }
 
-                if (i > position)
+            foreach (GraphNode node in Nodes)
+            {
+                if (node.Value == a)
                 {
-                    temp[i - 1] = Nodes[i];
+                    node.Edges.Add(new Tuple<string, int>(a, weight));
+                }
+                if (node.Value == b)
+                {
+                    node.Edges.Add(new Tuple<string, int>(b, weight));
                 }
             }
 
-            DeleteEdge(x);
-            Nodes = temp;
-            count--;
+            return "Edge Added";
         }
 
+        public string Append(string parent, string node, int weight)
+        {
+            if (!Exists(parent))
+                return "Parent does no exist";
+            Add(node);
+            AddEdge(parent, node, weight);
 
+            return "Added node and edge";
+        }
     }
 }

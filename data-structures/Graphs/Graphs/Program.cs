@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Graphs.Classes;
+using System;
+using System.Collections.Generic;
 
 namespace Graphs
 {
@@ -6,7 +8,8 @@ namespace Graphs
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
         }
+
     }
 }

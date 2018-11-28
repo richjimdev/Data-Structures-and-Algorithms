@@ -7,7 +7,7 @@ namespace Graphs.Classes
     public class GraphNode
     {
         public string Value;
-        public List<string> Edges = new List<string>();
+        public List<Tuple<string, int>> Edges = new List<Tuple<string, int>>();
 
         public GraphNode(string value)
         {
