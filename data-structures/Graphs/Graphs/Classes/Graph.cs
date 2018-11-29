@@ -6,7 +6,7 @@ namespace Graphs.Classes
 {
     public class Graph
     {
-        List<GraphNode> Nodes;
+        public List<GraphNode> Nodes = new List<GraphNode>();
 
         public void Add(string value)
         {
@@ -72,6 +72,16 @@ namespace Graphs.Classes
             }
 
             return neighbors;
+        }
+
+        public List<GraphNode> GetNodes()
+        {
+            return Nodes;
+        }
+
+        public int Size()
+        {
+            return Nodes.Count;
         }
     }
 }
