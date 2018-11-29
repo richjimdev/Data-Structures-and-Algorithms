@@ -22,3 +22,4 @@
 19. [Sorting Algorithm: Insertion Sort](/sorting-algorithms/InsertionSort/)
 20. [Sorting Algorithm: Quick Sort](/sorting-algorithms/QuickSort/)
 21. [Sorting Algorithm: Merge Sort](/sorting-algorithms/MergeSort/)
+22. [Data Structure: Graph](/data-structures/Graphs/)
