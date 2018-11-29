@@ -25,3 +25,4 @@
 22. [Sorting Algorithm: Quick Sort](/sorting-algorithms/QuickSort/)
 23. [Sorting Algorithm: Merge Sort](/sorting-algorithms/MergeSort/)
 24. [Data Structure: Graph](/data-structures/Graphs/)
+25. [Challenge: Get Edges](/challenges/GetEdge/)
