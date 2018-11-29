@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetEdge", "GetEdge\GetEdge.csproj", "{F17010E0-3F1E-404C-87AC-24C858E69AE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F17010E0-3F1E-404C-87AC-24C858E69AE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F17010E0-3F1E-404C-87AC-24C858E69AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F17010E0-3F1E-404C-87AC-24C858E69AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F17010E0-3F1E-404C-87AC-24C858E69AE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D3C8AA5-7087-4B1D-8D24-02A2BC720DD3}
+	EndGlobalSection
+EndGlobal
