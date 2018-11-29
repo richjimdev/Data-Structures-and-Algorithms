@@ -1,5 +1,6 @@
 using Graphs.Classes;
 using System;
+using System.Collections.Generic;
 using Xunit;
 
 namespace GraphsTest
@@ -62,6 +63,33 @@ namespace GraphsTest
                 graph.Add(i.ToString());
 
             Assert.Equal(length, graph.Size());
+        }
+
+        /// <summary>
+        /// Tests that neighbors method returns the node's methods
+        /// </summary>
+        /// <param name="input">Node to test</param>
+        /// <param name="expected">Count of neighbors</param>
+        [Theory]
+        [InlineData("A", 2)]
+        [InlineData("B", 2)]
+        [InlineData("C", 3)]
+        public void NeighborsReturnsTotalNodeNeighbors(string input, int expected)
+        {
+            Graph graph = new Graph();
+            graph.Add("A");
+            graph.Add("B");
+            graph.Add("C");
+            graph.Add("D");
+
+            graph.AddEdge("A", "B", 1);
+            graph.AddEdge("B", "C", 1);
+            graph.AddEdge("C", "A", 1);
+            graph.AddEdge("C", "D", 1);
+
+            List<GraphNode> result = graph.Neighbors(input);
+
+            Assert.Equal(expected, result.Count);
         }
     }
 }
