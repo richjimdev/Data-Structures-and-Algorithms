@@ -58,11 +58,11 @@ namespace Graphs.Classes
             {
                 if (node.Value == a)
                 {
-                    node.Edges.Add(new Tuple<string, int>(a, weight));
+                    node.Edges.Add(new Tuple<string, int>(b, weight));
                 }
                 if (node.Value == b)
                 {
-                    node.Edges.Add(new Tuple<string, int>(b, weight));
+                    node.Edges.Add(new Tuple<string, int>(a, weight));
                 }
             }
 
