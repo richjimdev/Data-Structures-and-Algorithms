@@ -13,22 +13,22 @@ namespace Graphs.Classes
             Nodes.Add(new GraphNode(value));
         }
 
-        private bool Exists(string value)
+        private GraphNode Find(string value)
         {
             foreach (GraphNode node in Nodes)
             {
                 if (node.Value == value)
-                    return true;
+                    return node;
             }
 
-            return false;
+            return null;
         }
 
         public string AddEdge(string a, string b, int weight)
         {
-            if (!Exists(a) || !Exists(b))
+            if (Find(a) == null || Find(b) ==null)
             {
-                return "Input nodes do not exist";
+                return "One or both input nodes do not exist";
             }
 
             foreach (GraphNode node in Nodes)
@@ -48,12 +48,30 @@ namespace Graphs.Classes
 
         public string Append(string parent, string node, int weight)
         {
-            if (!Exists(parent))
+            if (Find(parent) == null)
                 return "Parent does no exist";
             Add(node);
             AddEdge(parent, node, weight);
 
             return "Added node and edge";
+        }
+
+        public List<GraphNode> Neighbors(string value)
+        {
+            GraphNode root = Find(value);
+
+            if (root == null)
+                throw new Exception("Node does not exist");
+
+            List<GraphNode> neighbors = new List<GraphNode>();
+
+            foreach (Tuple<string, int> edge in root.Edges)
+            {
+                GraphNode node = Find(edge.Item1);
+                neighbors.Add(node);
+            }
+
+            return neighbors;
         }
     }
 }
