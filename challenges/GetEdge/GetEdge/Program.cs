@@ -30,6 +30,52 @@ namespace GetEdge
                 foreach (var edge in neighbors)
                     Console.WriteLine($"{node.Value} to {edge.Item1}: ${edge.Item2}");
             }
+
+            Console.WriteLine("==============================");
+
+            string[] trip1 = { "Seattle", "LA", "Houston" };
+
+            var result = GetEdges(graph, trip1);
+            Console.WriteLine($"Result, trip is possible: {result.Item1}, price: ${result.Item2}");
+
+            string[] trip2 = { "Seattle", "LA", "Houston", "NYC", "Miami", "Chicago", "Boise" };
+
+            var result2 = GetEdges(graph, trip2);
+            Console.WriteLine($"Result, trip is possible: {result2.Item1}, price: ${result2.Item2}");
+
+            string[] trip3 = { "Seattle", "Boise", "Miami" };
+
+            var result3 = GetEdges(graph, trip3);
+            Console.WriteLine($"Result, trip is possible: {result3.Item1}, price: ${result3.Item2}");
+        }
+
+        public static Tuple<bool, int> GetEdges(Graph graph, string[] trip)
+        {
+            int total = 0;
+
+            for (int i = 0; i < trip.Length - 1; i++)
+            {
+                GraphNode city = graph.Find(trip[i]);
+                bool connects = false;
+
+                foreach (var edge in city.Edges)
+                {
+                    if(edge.Item1 == trip[i+1])
+                    {
+                        connects = true;
+                        total += edge.Item2;
+                        Console.WriteLine($"{ city.Value} connects to {edge.Item1}!");
+                    }
+                }
+
+                if (!connects)
+                {
+                    Console.WriteLine($"{ city.Value} does not connect to {trip[i+1]}!");
+                    return new Tuple<bool, int>(false, 0);
+                }
+            }
+            
+            return new Tuple<bool, int>(true, total);
         }
 
 

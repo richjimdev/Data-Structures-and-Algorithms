@@ -29,7 +29,7 @@ namespace Graphs.Classes
         /// </summary>
         /// <param name="value">Value of node to find</param>
         /// <returns>Found node, or null if not found</returns>
-        private GraphNode Find(string value)
+        public GraphNode Find(string value)
         {
             foreach (GraphNode node in Nodes)
             {
